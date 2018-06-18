@@ -8,15 +8,17 @@ public class GuessTheNumberUi : MonoBehaviour {
     public InputField UserInputField;
     public Text PcResponseTextField;
 
+    public string myname;
+
     private int intRandomNumber;
 
     // Use this for initialization
     void Start()
     {
-        InitializeGame();
+        StartNewGame();
     }
 
-    public void InitializeGame()
+    public void StartNewGame()
     {
         // Pick a random number
         intRandomNumber = Random.Range(1, 10);
